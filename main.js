@@ -1,6 +1,39 @@
 /******************
  * YOUR CODE HERE *
  ******************/
+//const cars = ['bmw', 'audi', 'honda', 'nissan', 'ford', 'speed racer'];
+//console.log(cars[cars.length - 1]);
+//cars[cars.length - 1] = 'sharod';
+//console.log(cars);
+
+
+
+
+function addMeToEnd(arr){
+arr.push('Colin');
+}
+
+function changeLast(arr,num){
+  /* change the array at its last index */
+arr.pop();
+arr.push(num);
+}
+
+function addMeToStart(arr){
+  arr.unshift('Colin');
+}
+
+function changeAllValuesTo(arr, nV) {
+  let n = arr.length;
+  for (let i = 0; i < n; ++i) {
+      arr[i] = nV;
+  }
+}
+
+
+
+
+
 
 
 
