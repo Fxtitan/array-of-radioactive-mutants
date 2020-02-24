@@ -13,7 +13,7 @@ function addMeToEnd(arr){
 arr.push('Colin');
 }
 
-function changeLast(arr,num){
+function changeLast(arr,num){             //arr[arr.length - 1] = value; *answer
   /* change the array at its last index */
 arr.pop();
 arr.push(num);
@@ -24,11 +24,32 @@ function addMeToStart(arr){
 }
 
 function changeAllValuesTo(arr, nV) {
-  let n = arr.length;
-  for (let i = 0; i < n; ++i) {
+  for (let i = 0; i < arr.length; ++i) {
       arr[i] = nV;
   }
+  //arr.fill(nV) does the same thing.
 }
+//returning something means to throw it away 
+
+function oddOrEven(arr){
+  for(let i = 0; i < arr.length; i++){
+    if(arr[i] % 2 === 0){
+      arr[i] = 'even'; 
+    }else{ 
+      arr[i] = 'odd';
+    }
+  }
+}
+
+function changeNextThreeToValue(start, arr, nV){
+  for (let i = start; i < start + 3; i++) {
+arr[i] = nV;
+  }
+}
+
+
+
+
 
 
 
