@@ -1,64 +1,41 @@
 /******************
  * YOUR CODE HERE *
  ******************/
-//const cars = ['bmw', 'audi', 'honda', 'nissan', 'ford', 'speed racer'];
-//console.log(cars[cars.length - 1]);
-//cars[cars.length - 1] = 'sharod';
-//console.log(cars);
-
-
-
-
-function addMeToEnd(arr){
-arr.push('Colin');
+const addMeToEnd = (arr) => {
+  arr.push("Colin")
 }
 
-function changeLast(arr,num){             //arr[arr.length - 1] = value; *answer
-  /* change the array at its last index */
-arr.pop();
-arr.push(num);
+const changeLast = (arr, value) => {
+  arr.pop();
+  arr.push(value);
 }
 
-function addMeToStart(arr){
-  arr.unshift('Colin');
+const addMeToStart = (arr) => {
+  arr.unshift("Colin")
 }
 
-function changeAllValuesTo(arr, nV) {
-  for (let i = 0; i < arr.length; ++i) {
-      arr[i] = nV;
+const changeAllValuesTo = (arr, value) => {
+  for (let i = 0; i < arr.length; i++) {
+    arr[i] = value;
   }
-  //arr.fill(nV) does the same thing.
+  //arr.fill(value)
 }
-//returning something means to throw it away 
 
-function oddOrEven(arr){
-  for(let i = 0; i < arr.length; i++){
-    if(arr[i] % 2 === 0){
-      arr[i] = 'even'; 
-    }else{ 
+const oddOrEven = (arr) => {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] % 2 === 0) {
+      arr[i] = 'even';
+    } else {
       arr[i] = 'odd';
     }
   }
 }
 
-function changeNextThreeToValue(start, arr, nV){
+const changeNextThreeToValue = (start, arr, value) => {
   for (let i = start; i < start + 3; i++) {
-arr[i] = nV;
+    arr[i] = value;
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 /*********************************
  * OUR CODE BELOW; DO NOT TOUCH! *
